@@ -1,0 +1,8 @@
+# These flags are for code completion. ion-cpp doesn't use this file.
+
+-Dint128_t=__int128_t
+-Duint128_t=__uint128_t
+-I/usr/local/ion.cdt/include/
+-I/usr/local/ion.cdt/include/ionlib/contracts/
+-I/usr/local/ion.cdt/include/ionlib/core/
+

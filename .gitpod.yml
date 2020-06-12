@@ -1,0 +1,18 @@
+image: plasmachain/web-ide-node:latest
+
+ports:
+  - port: 3000
+    onOpen: ignore
+  - port: 8000
+    onOpen: ignore
+  - port: 8080
+    onOpen: ignore
+  - port: 8888
+    onOpen: ignore
+  - port: 9876
+    onOpen: ignore
+
+tasks:
+- command: webapp/start.sh
+- before: sol wallet unlock --password < /root/wallet-password
+  command: ionode --config ~/config.ini --genesis-json ~/genesis.json --data-dir ~/data 
