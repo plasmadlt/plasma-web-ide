@@ -112,11 +112,6 @@ Note: if the web app is currently open, then it will cause errors like the follo
 FC Exception encountered while processing chain.get_table_rows
 ```
 
-## Contributing
-
-[Contributing Guide](./CONTRIBUTING.md)
-
-[Code of Conduct](./CONTRIBUTING.md#conduct)
 
 ## License
 
