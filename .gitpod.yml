@@ -13,6 +13,7 @@ ports:
     onOpen: ignore
 
 tasks:
-- command: webapp/start.sh
+- before: cd webapp
+  command: ./start.sh
 - before: sol wallet unlock --password < /root/wallet-password
   command: ionode --config ~/config.ini --genesis-json ~/genesis.json --data-dir ~/data 
