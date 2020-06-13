@@ -2,7 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](./LICENSE)
 
-PlasmaDLT Quickstart Web IDE lets developers start building full-stack PlasmaDLT applications in a matter of minutes. 
+PlasmaDLT Quickstart Web IDE lets developers start building full-stack PlasmaDLT applications in a matter of minutes.
 
 Powered by Gitpod.io and Docker, it provides developers with a personal single-node PlasmaDLT blockchain for development and testing purposes without a need of going through advanced local environment setup. It also includes an example application with a smart contract and web frontend, connected to the blockchain. Developers can also use PlasmaDLT tools like sol and  ion.cdt straight out of the box. This project requires zero installation on the user's machine. All code is stored and managed on the developer's personal GitHub account, with the changes saved automatically.
 
@@ -28,7 +28,7 @@ To open a terminal, use the Terminal drop-down menu in the IDE user interface.
 
 ## Building sample contract
 
-The source code for the sample smartcontract is at `contracts/talk/talk.cpp` within the IDE. To compile the contract, run this in a terminal:
+The source code for the sample smart contract is at `contracts/talk/talk.cpp` within the IDE. To compile the contract, run this in a terminal:
 
 ```
 cd contracts/talk/
@@ -42,7 +42,7 @@ This will produce `talk.abi` and `talk.wasm`.
 
 Run this in a terminal:
 
-Generate contract's account on behalf of ion account (ion's account key is already in the wallet). 
+Generate contract's account on behalf of ion account (ion's account key is already in the wallet).
 
 ```
 sol create account ion talk PLASMA5sJ5yg8H4sZWN5sdcnUc8dV7JRaTwYuFRrNUmugf9ojSEYLggr
@@ -63,7 +63,7 @@ sol set contract talk ./
 
 ```
 
-## Creating users and using the contract
+## Creating local users and using the contract
 
 Run this in a terminal:
 ```
@@ -105,6 +105,26 @@ rm -rf ~/data/*
 ionode --config ~/config.ini --genesis-json ~/genesis.json --data-dir ~/data
 
 ```
+## Deploying Production
+
+* Activate the production account in official wallet PlasmaPay on the dashboard: https://app.plasmapay.com/dashboard and decrypt your private keys (key icon on the wallet). Attention: you can create only one account in PlasmaPay and the account's name will be your contract name.
+* Choice producer from the network from http://plasmadlt.com/monitor
+* Setup dApp https://app.plasmapay.com/dashboard and get Auoth for front-end
+
+
+# Import Wallet production
+
+```
+sol --url http://comeric.liberty.plasmadlt.com --wallet-url http://0.0.0.0:9999  wallet import --private-key 5JF*********************************
+```
+
+# Deploy smart-contract
+
+```
+sol --url  http://comeric.liberty.plasmadlt.com  set contract accountname /host-share/helllloworld -p accountname@active
+
+```
+
 
 Note: if the web app is currently open, then it will cause errors like the following. You may ignore them:
 
