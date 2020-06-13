@@ -105,20 +105,20 @@ rm -rf ~/data/*
 ionode --config ~/config.ini --genesis-json ~/genesis.json --data-dir ~/data
 
 ```
-## Deploying Production
+# Deploying Production
 
 * Activate the production account in official wallet PlasmaPay on the dashboard: https://app.plasmapay.com/dashboard and decrypt your private keys (key icon on the wallet). Attention: you can create only one account in PlasmaPay and the account's name will be your contract name.
 * Choice producer from the network from http://plasmadlt.com/monitor
 * Setup dApp https://app.plasmapay.com/dashboard and get Auoth for front-end
 
 
-# Import Wallet production
+## Import Wallet production
 
 ```
 sol --url http://comeric.liberty.plasmadlt.com --wallet-url http://0.0.0.0:9999  wallet import --private-key 5JF*********************************
 ```
 
-# Deploy smart-contract
+## Deploy smart-contract
 
 ```
 sol --url  http://comeric.liberty.plasmadlt.com  set contract accountname /host-share/helllloworld -p accountname@active
