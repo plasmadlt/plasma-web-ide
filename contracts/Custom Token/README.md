@@ -64,7 +64,7 @@ sol set account permission accountname active '{"keys": [{"key": "PLASMA5j18E7JM
 {"permission": {"actor": "simple.token", "permission": "ion.code"}, "weight": 1}
 ], "waits": []}' -p accountname@active
 ```
-# Set the token rate against PLASMA
+## Set the token rate against PLASMA
 * token  PBV = 2 / (10 ^ 4),  1 PBV = 0,0002 PLASMA
 ```
 sol push action simple.token updaterate '["accountname", "PBV", "PLASMA", "2", "4"]' -p accountname@active
