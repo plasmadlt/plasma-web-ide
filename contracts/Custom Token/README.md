@@ -4,7 +4,7 @@
 
 * Activate the production account in official wallet PlasmaPay on the dashboard: https://app.plasmapay.com/dashboard and decrypt your private keys (key icon on the wallet). Attention: you can create only one account in PlasmaPay and the account's name will be your contract name.
 * Choice producer from the network from http://plasmadlt.com/monitor
-* Setup dApp https://app.plasmapay.com/dashboard and get Auoth for front-end
+* Setup dApp https://app.plasmapay.com/dashboard and get Auth for front-end
 
 
 ## Import wallet  
