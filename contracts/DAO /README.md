@@ -444,10 +444,9 @@ Let's have a look - how typical oracle web-service execution works. The process 
 ```
 git clone https://github.com/plasmadlt/plasmadlt-invest-fund/blob/master/src/oracle/
 cd oracle
-// install node modules
-npm install
+
 // run oracle
- nodemon --watch fiat --watch shared --watch
+ node oracle.js
  ```
 For better integration, data protection, privacy and safety reasons, you are obliged to apply some third-party software, such as Docker, Cubernetes, to embed your service into.
 
